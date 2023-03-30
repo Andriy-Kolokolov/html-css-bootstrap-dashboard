@@ -1,5 +1,15 @@
+:root {
+    --top-bar-height: 4rem;
+}
+
 body {
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+
+    white-space: nowrap;
 }
 
 .navbar .input-group > * {
@@ -26,5 +36,41 @@ body {
 }
 
 .content {
-    flex: 1 0 auto;
+    /*flex: 1 0 auto;*/
 }
+
+.top_bar {
+    height: var(--top-bar-height);
+}
+
+.sidebar .sidebar-brand {
+    height: var(--top-bar-height);
+}
+
+.sidebar nav {
+    background-image: url("img/sidebar-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #051e34;
+}
+
+.sidebar i {
+    display: inline-block;
+    margin-right: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.sidebar a {
+    color: white;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 1rem;
+}
+
+.sidebar .nav-item span,
+.sidebar .user_name span{
+    padding-left: 1rem;
+}
+

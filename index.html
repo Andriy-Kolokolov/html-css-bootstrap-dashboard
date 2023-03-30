@@ -18,10 +18,43 @@
 <body>
 
 	<div class="wrapper d-flex">
-		<!--    SIDEBAR    -->
-		<ul class="navbar-nav sidebar sidebar-dark">
 
-		</ul>
+		<!--    SIDEBAR    -->
+		<div class="navbar-nav sidebar sidebar-dark">
+			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+				<img class="d-none d-md-block" src="assets/img/logo.svg" alt="logo image">
+				<img style="max-width: 40%" class="d-block d-md-none" src="assets/img/mobile-logo.png"
+						alt="mobile logo">
+			</a>
+			<nav class="h-100 d-flex flex-column justify-content-between p-4">
+				<ul class="navbar-nav d-flex flex-column text-center">
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-house"></i>
+							<span class="d-none d-md-inline-block">Home</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-chart-simple"></i>
+							<span class="d-none d-md-inline-block">Stats</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">
+							<i class="fa-solid fa-signal"></i>
+							<span class="d-none d-md-inline-block">Signals</span>
+						</a>
+					</li>
+				</ul>
+				<div class="user_name">
+					<a href="#">
+						<i class="fa-solid fa-gear"></i>
+						<span class="d-none d-md-inline-block">Admin</span>
+					</a>
+				</div>
+			</nav>
+		</div>
 		<!--    END OF SIDEBAR    -->
 		
 		<!--    CONTENT WRAPPER    -->
@@ -30,7 +63,7 @@
 			<div class="content">
 
 				<!--    TOP BAR    -->
-				<nav class="navbar navbar-expand navbar-light bg-light">
+				<nav class="navbar top_bar navbar-expand navbar-light bg-light">
 					<div class="container-fluid">
 						<div class="navbar-collapse" id="navbarNav">
 							<div class="input-group rounded-3">
