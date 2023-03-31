@@ -30,6 +30,17 @@ a {
     min-height: 100vh;
 }
 
+/*    md-breakpoint    */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 6rem;
+    }
+}
+
+.logo_mobile {
+    max-width: 60%
+}
+
 .content-wrapper {
     width: 100%;
     overflow-x: hidden;
