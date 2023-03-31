@@ -8,7 +8,6 @@ body {
 
 a {
     text-decoration: none;
-
     white-space: nowrap;
 }
 
@@ -28,6 +27,10 @@ a {
 .sidebar {
     width: 14rem;
     min-height: 100vh;
+}
+
+.sidebar nav {
+    margin-top: .25rem;
 }
 
 /*    md-breakpoint    */
@@ -102,10 +105,14 @@ a {
 }
 
 .page_content .breadcrumb_col a {
-    padding: 2px 8px;
+    padding: 1px 8px;
     border-radius: 3rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb_col .title {
+    font-size: 25px;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -116,4 +123,38 @@ a {
     align-items: center;
 }
 
+.btn_new_student {
+    border: 1px solid white;
+}
 
+
+
+.new_student_collapse_sidebar .form_container {
+    z-index: 99;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+}
+
+.new_student_collapse_sidebar .grey_bg_transparent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: .5;
+}
+
+@media (max-width: 768px) {
+    .new_student_collapse_sidebar .form_container {
+        width: 100vw;
+    }
+
+    .new_student_collapse_sidebar .grey_bg_transparent{
+        display: none;
+    }
+}
