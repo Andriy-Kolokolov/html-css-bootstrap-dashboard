@@ -127,8 +127,6 @@ a {
     border: 1px solid white;
 }
 
-
-
 .new_student_collapse_sidebar .form_container {
     z-index: 99;
     background-color: white;
@@ -157,4 +155,29 @@ a {
     .new_student_collapse_sidebar .grey_bg_transparent{
         display: none;
     }
+}
+
+.table th,
+.table tr,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tr th:first-child {
+    text-align: left;
+}
+
+.table .btn {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.table .fa-trash,
+.table .fa-pencil {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.table .btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
