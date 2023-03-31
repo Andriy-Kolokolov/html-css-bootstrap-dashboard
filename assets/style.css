@@ -81,7 +81,39 @@ a {
 }
 
 .sidebar .nav-item span,
-.sidebar .user_name span{
+.sidebar .user_name span {
     padding-left: 1rem;
 }
+
+.page_content .row:first-child {
+    background-color: #1b71e6;
+}
+
+.breadcrumb_col span {
+    color: white;
+}
+
+.page_content {
+    color: white;
+}
+
+.page_content .row:last-child {
+    padding-top: 10px;
+}
+
+.page_content .breadcrumb_col a {
+    padding: 2px 8px;
+    border-radius: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: url("img/angles-right-solid.svg");
+    height: 1.5rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+}
+
 
