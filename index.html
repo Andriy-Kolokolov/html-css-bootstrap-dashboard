@@ -8,9 +8,12 @@
 	<title>Boolean Dashboard</title>
 
 	<!--    FONT AWESOME    -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"/>
 	<!--    BOOTSTRAP    -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="assets/style.css">
 
@@ -91,8 +94,7 @@
 		</nav>
 	</aside>
 
-	<div class="page_content">
-		<div class="container-fluid">
+	<div class="page_content_container container-fluid">
 			<!--    BREADCRUMBS NAV START    -->
 			<div class="breadcrumb_nav row p-3">
 				<!--    BREADCRUMB NAV    -->
@@ -110,7 +112,7 @@
 									<li class="breadcrumb-item">
 										<a href="#">3 app</a>
 									</li>
-									<li class="d-none d-md-block breadcrumb-item">
+									<li class="d-none d-md-flex flex-wrap g-4 breadcrumb-item">
 										<a href="#">Boolean mobile app</a>
 										<a href="#">Boolean web app</a>
 										<a href="#">Boolean blog app</a>
@@ -334,32 +336,51 @@
 								<div class="accordion accordion-flush" id="accordionFlushExample">
 									<div class="accordion-item">
 										<h2 class="accordion-header">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-												Accordion Item #1
+											<button class="accordion-button collapsed" type="button"
+													data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+													aria-expanded="false" aria-controls="flush-collapseOne">
+												Come aggiungere un nuovo studente
 											</button>
 										</h2>
-										<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-											<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+										<div id="flush-collapseOne" class="accordion-collapse collapse"
+												data-bs-parent="#accordionFlushExample">
+											<div class="accordion-body">
+												Clicca "+" in alto nella sezione blu
+											</div>
 										</div>
 									</div>
 									<div class="accordion-item">
 										<h2 class="accordion-header">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-												Accordion Item #2
+											<button class="accordion-button collapsed" type="button"
+													data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+													aria-expanded="false" aria-controls="flush-collapseTwo">
+												Come posso accedere questa dashboard da mobile
 											</button>
 										</h2>
-										<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-											<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+										<div id="flush-collapseTwo" class="accordion-collapse collapse"
+												data-bs-parent="#accordionFlushExample">
+											<div class="accordion-body">
+												Clicca sul'icona della campanella
+											</div>
 										</div>
 									</div>
 									<div class="accordion-item">
 										<h2 class="accordion-header">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-												Accordion Item #3
+											<button class="accordion-button collapsed" type="button"
+													data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+													aria-expanded="false" aria-controls="flush-collapseThree">
+												Posso usare questa dashboard da mobile
 											</button>
 										</h2>
-										<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-											<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+										<div id="flush-collapseThree" class="accordion-collapse collapse"
+												data-bs-parent="#accordionFlushExample">
+											<div class="accordion-body">Placeholder content for this accordion, which is
+												the third item's accordion body. Nothing more exciting happening here in
+												terms of content, but just filling up the space to make it look, at
+												least at first glance, a bit more representative of how this would look
+												in a real-world application.
+											</div>
+											intended to demonstrate the <code>.accordion-flush</code> class. This is
 										</div>
 									</div>
 								</div>
@@ -372,20 +393,61 @@
 				</div>
 
 				<!--    RIGHT CONTENT    -->
-				<div class="col d-none d-lg-block">
+				<div class="col">
+					<!--    TO-DO CARD    -->
 					<div class="card">
 						<div class="card-header">
 							Todo
 						</div>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">An item</li>
-							<li class="list-group-item">A second item</li>
-							<li class="list-group-item">A third item</li>
-						</ul>
+						<div class="m-3 card">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<input class="form-check-input" type="checkbox" value="" id="kickOffCheck">
+									<label class="form-check-label" for="kickOffCheck">
+										Kickoff nuove classi
+									</label>
+								</li>
+								<li class="list-group-item">
+									<input class="form-check-input" type="checkbox" value="" id="lessonCheck">
+									<label class="form-check-label" for="lessonCheck">
+										Lezione su Bootstrap 5 in classe #75
+									</label>
+								</li>
+								<li class="list-group-item">
+									<input class="form-check-input" type="checkbox" value="" id="userNameCheck">
+									<label class="form-check-label" for="userNameCheck">
+										Controllare username github studenti
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="m-3 card">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<img style="width: 100%" src="assets/img/stats.jpeg" alt="stats">
+									<h4>Utenti attivi</h4>
+									<p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+								</li>
+								<li class="list-group-item">
+									Gennaio: 1200
+								</li>
+								<li class="list-group-item">
+									Febbraio: 800
+								</li>
+								<li class="list-group-item">
+									Marzo: 1500
+								</li>
+								<li class="list-group-item">
+									<a style="text-decoration: underline" href="#">Visualizza report approfondito</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 </div>
 
@@ -508,7 +570,11 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+		integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+		crossorigin="anonymous"></script>
 </body>
 </html>

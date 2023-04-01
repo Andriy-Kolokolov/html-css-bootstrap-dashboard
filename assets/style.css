@@ -13,6 +13,10 @@ a {
     white-space: nowrap;
 }
 
+ul {
+    list-style: none;
+}
+
 .navbar .input-group > * {
     background-color: #e3e3e3;
 }
@@ -42,7 +46,7 @@ a {
         width: 6rem;
     }
 
-    .page_content {
+    .page_content_container {
         width: calc(100vw - 6rem);
     }
 }
@@ -87,21 +91,21 @@ a {
     padding-left: 1rem;
 }
 
-.page_content .row:first-child {
+.page_content_container .row:first-child {
     background-color: #1b71e6;
 }
 
-.page_content {
+.page_content_container {
     height: calc(100vh - var(--top-bar-height));
     width: 100vw;
     overflow: auto;
 }
 
-.page_content .row:last-child {
+.page_content_container .row:last-child {
     padding-top: 10px;
 }
 
-.page_content .breadcrumb_col a {
+.page_content_container .breadcrumb_col a {
     padding: 1px 8px;
     border-radius: 3rem;
     color: white;
@@ -112,15 +116,18 @@ a {
     color: white;
 }
 
+.breadcrumb-col a {
+    margin-top: 50px;
+}
+
 .breadcrumb_col .title {
     font-size: 25px;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: url("img/angles-right-solid.svg");
-    height: 1.5rem;
+    height: 1.2rem;
     aspect-ratio: 1 / 1;
-    display: flex;
     align-items: center;
 }
 
@@ -186,4 +193,8 @@ a {
 
 .table span {
     white-space: nowrap;
+}
+
+.card {
+    margin-bottom: 1rem;
 }
