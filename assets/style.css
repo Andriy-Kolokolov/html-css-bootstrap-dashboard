@@ -1,6 +1,6 @@
 :root {
     --header-height: 4rem; /*    4rem - 0.5rem padding top&bot    */
-    --sidebar-width: 14rem;
+    --sidebar-width: 10rem;
 }
 
 body {
@@ -24,12 +24,11 @@ ul {
 }
 
 .logo_container .lg-logo {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .logo_container .sm-logo {
-    height: 60px;
-    padding-right: 1rem;
+    height: 50px;
 }
 
 .header .navbar .input-group > * {
@@ -42,7 +41,7 @@ ul {
 }
 
 .header .logo_container {
-    min-width: 11rem;
+    min-width: var(--sidebar-width);
 }
 
 /*****************************************
@@ -64,8 +63,21 @@ ul {
     background-color: #051e34;
 }
 
-.sidebar a {
+.sidebar i {
+    margin-right: 1rem;
+}
+
+.sidebar .nav-link {
+    padding: 10px;
     color: white;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .username {
+    padding: 1rem;
 }
 
 .page_content_container {
@@ -169,16 +181,26 @@ ul {
     MD BREAKPOINT
 *****************************************/
 @media (max-width: 768px) {
+    body {
+        --sidebar-md-width: 5rem;
+    }
+
+
     .header .logo_container {
-        min-width: 3rem;
+        min-width: var(--sidebar-md-width);
     }
 
     .sidebar {
-        width: 6rem;
+        width: var(--sidebar-md-width);
+    }
+
+    .sidebar .nav-link i,
+    .username i {
+        margin: 0;
     }
 
     .page_content_container {
-        width: calc(100vw - 6rem);
+        width: calc(100vw - var(--sidebar-md-width));
     }
 
     .breadcrumb_nav [class*=col] {
