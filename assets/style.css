@@ -16,6 +16,9 @@ ul {
     list-style: none;
 }
 
+/*****************************************
+    HEADER
+*****************************************/
 .header {
     height: var(--header-height);
 }
@@ -73,8 +76,8 @@ ul {
     background-color: #1b71e6;
 }
 
-.breadcrumb_nav .row:last-child {
-    padding-top: 10px;
+.breadcrumb_col .row:first-child {
+    margin-bottom: .5rem;
 }
 
 .breadcrumb_nav .breadcrumb_col a {
@@ -96,10 +99,6 @@ ul {
     font-size: 25px;
 }
 
-.breadcrumb-item {
-    margin-left: 1rem;
-}
-
 .breadcrumb-item + .breadcrumb-item::before {
     content: url("img/angles-right-solid.svg");
     height: 1.2rem;
@@ -112,7 +111,7 @@ ul {
 }
 
 /*****************************************
-    ADD STUDENT FORM START
+    ADD STUDENT FORM
 *****************************************/
 .new_student_collapse_sidebar .form_container {
     z-index: 1030;
@@ -135,6 +134,9 @@ ul {
     opacity: .5;
 }
 
+/*****************************************
+    CARD TABLE
+*****************************************/
 .table th,
 .table tr,
 .table td {
@@ -155,7 +157,6 @@ ul {
     color: rgba(0, 0, 0, 0.7);
 }
 
-
 .table .btn:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -164,7 +165,9 @@ ul {
     white-space: nowrap;
 }
 
-/*    md-breakpoint    */
+/*****************************************
+    MD BREAKPOINT
+*****************************************/
 @media (max-width: 768px) {
     .header .logo_container {
         min-width: 3rem;
@@ -178,11 +181,24 @@ ul {
         width: calc(100vw - 6rem);
     }
 
+    .breadcrumb_nav [class*=col] {
+        margin-top: 5px;
+    }
+
     .new_student_collapse_sidebar .form_container {
         width: 100vw;
     }
 
     .new_student_collapse_sidebar .grey_bg_transparent {
         display: none;
+    }
+}
+
+/*****************************************
+    SM BREAKPOINT
+*****************************************/
+@media (max-width: 576px) {
+    .breadcrumb_nav [class*=col] {
+        margin-top: 5px;
     }
 }
