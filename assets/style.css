@@ -23,6 +23,15 @@ ul {
     height: var(--header-height);
 }
 
+.dropdown_bell.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
 .logo_container .lg-logo {
     max-width: 100%;
 }
