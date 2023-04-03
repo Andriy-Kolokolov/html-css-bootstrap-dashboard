@@ -154,22 +154,15 @@
 						<div class="text-nowrap">Nuovo studente</div>
 					</div>
 					<div class="col-auto">
-						<div class="col">
-							<button
-									class="btn btn-primary btn_new_student"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#sidebar"
-									aria-expanded="false"
-									aria-controls="sidebar">
-								+
-							</button>
-						</div>
+						<button class="btn btn-primary btn_new_student" type="button" data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasNewStudent" aria-controls="offcanvasNewStudent">
+							+
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--    BREADCRUMBS NAV END    -->
+		<!-- BREADCRUMBS NAV END    -->
 
 		<!--    CARDS START    -->
 		<div class="mt-3 row content">
@@ -462,31 +455,15 @@
 
 </div>
 
-<!--    ADD NEW STUDENT COLLAPSE SIDEBAR    -->
-<div class="new_student_collapse_sidebar collapse" id="sidebar">
 
-	<div class="grey_bg_transparent">
-
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNewStudent" aria-labelledby="offcanvasNewStudent">
+	<div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="title">Inserisci un nuovo studente</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
-
-	<div class="form_container p-4">
-
+	<div class="offcanvas-body">
 
 		<form>
-			<div class="row">
-				<div class="col">
-					<h3 class="mb-4">Inserisci un nuovo studente</h3>
-				</div>
-				<div class="col d-flex align-items-center justify-content-end">
-					<button type="button"
-							class="btn-close float-end"
-							data-bs-toggle="collapse"
-							data-bs-target="#sidebar"
-							aria-label="Close">
-					</button>
-				</div>
-
-			</div>
 
 			<div class="row mb-3">
 				<div class="col">
@@ -574,6 +551,20 @@
 			<button type="submit" class="btn btn-primary">Salva</button>
 			<button type="submit" class="btn btn-warning">Svuota</button>
 		</form>
+
+	</div>
+</div>
+<!--    ADD NEW STUDENT COLLAPSE SIDEBAR    -->
+<div class="new_student_collapse_sidebar collapse" id="sidebar">
+
+	<div class="grey_bg_transparent">
+
+	</div>
+
+	<div class="form_container p-4">
+
+
+
 	</div>
 
 </div>

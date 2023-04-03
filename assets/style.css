@@ -125,25 +125,8 @@ ul {
 /*****************************************
     ADD STUDENT FORM
 *****************************************/
-.new_student_collapse_sidebar .form_container {
-    z-index: 1030;
-    background-color: white;
-    position: fixed;
-    right: 0;
-    top: 0;
+.offcanvas.offcanvas-end {
     width: 50vw;
-    height: 100vh;
-}
-
-.new_student_collapse_sidebar .grey_bg_transparent {
-    z-index: 1030;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50vw;
-    height: 100vh;
-    background-color: #000000;
-    opacity: .5;
 }
 
 /*****************************************
@@ -180,11 +163,10 @@ ul {
 /*****************************************
     MD BREAKPOINT
 *****************************************/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         --sidebar-md-width: 5rem;
     }
-
 
     .header .logo_container {
         min-width: var(--sidebar-md-width);
@@ -207,12 +189,8 @@ ul {
         margin-top: 5px;
     }
 
-    .new_student_collapse_sidebar .form_container {
+    .offcanvas.offcanvas-end {
         width: 100vw;
-    }
-
-    .new_student_collapse_sidebar .grey_bg_transparent {
-        display: none;
     }
 }
 
